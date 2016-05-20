@@ -1,0 +1,12 @@
+<!--<?xml version='1.0' encoding='utf-8'?>-->
+<!--<!DOCTYPE hibernate-mapping PUBLIC-->
+    <!--"-//Hibernate/Hibernate Mapping DTD 3.0//EN"-->
+    <!--"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">-->
+<!--<hibernate-mapping>-->
+
+    <!--<class name="db.StoreList" table="store_list" schema="diancan">-->
+        <!--<id name="storeId" column="store_id"/>-->
+        <!--<property name="imgUrl" column="img_url"/>-->
+        <!--<property name="storeName" column="store_name"/>-->
+    <!--</class>-->
+<!--</hibernate-mapping>-->

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <beans xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+               xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+               xmlns="http://www.springframework.org/schema/beans">
+
+    <!-- <context:annotation-config /> -->
+
+
+    <!-- 把标记了@Controller注解的类转换为bean -->
+
+
+    <!-- <context:component-scan base-package="com.mvc.controller" /> -->
+
+
+    <!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->
+
+
+    <!-- 对模型视图名称的解析，即在模型视图名称添加前后缀 -->
+
+
+    <!-- <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/" p:suffix=".jsp" /> -->
+
+
+    <!--配置一个controller拦截多个请求 -->
+
+
+    <!-- <bean id="paramMethodResolver" class="org.springframework.web.servle.mvc.multiaction.ParameterMethodNameResolver"> <property name="paramName" value="action"></property> </bean> <bean name="/test/multi" class="web.controller.MultiController"> <property name="methodNameResolver"> <ref bean="paramMethodResolver" /> </property> </bean> -->
+
+
+    <!-- 扫描包配置 -->
+
+
+    <context:component-scan base-package="controller"/>
+
+    <!-- 开启注解 -->
+
+
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>
+
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
+
+
+    <bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver" id="multipartResolver">
+
+    <property value="utf-8" name="defaultEncoding"/>
+
+    <property value="1048676000" name="maxUploadSize"/>
+
+</bean>
+
+    <!-- 静态资源访问 -->
+
+
+    <!--<mvc:resources mapping="/img/**" location="/img/"/>-->
+
+    <!-- 支持返回json-->
+
+
+    <mvc:annotation-driven/>
+
+</beans>

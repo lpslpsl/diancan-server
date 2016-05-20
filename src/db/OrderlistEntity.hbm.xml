@@ -1,0 +1,18 @@
+<!--<?xml version='1.0' encoding='utf-8'?>-->
+<!--<!DOCTYPE hibernate-mapping PUBLIC-->
+    <!--"-//Hibernate/Hibernate Mapping DTD 3.0//EN"-->
+    <!--"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">-->
+<!--<hibernate-mapping>-->
+
+    <!--<class name="db.OrderList" table="orderlist" schema="diancan">-->
+        <!--<id name="id" column="id"/>-->
+        <!--<property name="detail" column="detail"/>-->
+        <!--<property name="imageUrl" column="image_url"/>-->
+        <!--<property name="menuName" column="menu_name"/>-->
+        <!--<property name="price" column="price"/>-->
+        <!--<property name="userid" column="userid"/>-->
+        <!--<property name="storeId" column="store_id"/>-->
+        <!--<property name="checked" column="checked"/>-->
+        <!--<property name="menuId" column="menu_id"/>-->
+    <!--</class>-->
+<!--</hibernate-mapping>-->
